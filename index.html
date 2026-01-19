@@ -1,0 +1,95 @@
+
+---
+
+### `index.html`
+```html
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Elementary Teacher</title>
+    <meta name="description" content="Teaching tips, classroom resources, and simple ideas for elementary educators." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="brand" href="index.html">theelementaryteacher</a>
+
+        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">Menu</button>
+
+        <div class="nav-links" id="navLinks">
+          <a class="active" href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="resources.html">Resources</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <p class="kicker">Elementary education made practical</p>
+        <h1>Welcome to The Elementary Teacher</h1>
+        <p class="sub">
+          Classroom-ready ideas, routines, and resources you can use immediately.
+        </p>
+        <div class="hero-cta">
+          <a class="btn primary" href="resources.html">Browse resources</a>
+          <a class="btn" href="about.html">Meet the teacher</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container">
+      <section class="grid">
+        <article class="card">
+          <h2>Classroom Tips</h2>
+          <p>Simple strategies for behavior, routines, and community-building.</p>
+          <a class="link" href="resources.html#tips">Explore tips →</a>
+        </article>
+
+        <article class="card">
+          <h2>Printables</h2>
+          <p>Organizers, checklists, and classroom materials ready to download.</p>
+          <a class="link" href="resources.html#printables">See printables →</a>
+        </article>
+
+        <article class="card">
+          <h2>Reading & Phonics</h2>
+          <p>Foundational skills, fluency practice, and engaging literacy activities.</p>
+          <a class="link" href="resources.html#reading">Go to literacy →</a>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2>Featured this week</h2>
+        <div class="featured">
+          <div>
+            <h3>Morning Routine Checklist</h3>
+            <p class="muted">
+              A consistent morning routine reduces transitions and sets a calm tone.
+              Add your own steps and print for student desks.
+            </p>
+            <a class="btn small" href="resources.html#printables">Get it</a>
+          </div>
+          <div class="note">
+            <p><strong>Quick start:</strong> Replace the text on this site with your own,
+              then publish with GitHub Pages in 2 minutes.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© <span id="year"></span> theelementaryteacher</p>
+        <div class="footer-links">
+          <a href="contact.html">Contact</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
