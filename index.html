@@ -1,94 +1,231 @@
-
----
-
-### `index.html`
-```html
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Elementary Teacher</title>
-    <meta name="description" content="Teaching tips, classroom resources, and simple ideas for elementary educators." />
+    <title>Elementary Educator</title>
+    <meta name="description" content="Classroom resources, teaching tips, and tools for elementary educators." />
     <link rel="stylesheet" href="assets/styles.css" />
   </head>
+
   <body>
-    <header class="site-header">
-      <nav class="nav">
-        <a class="brand" href="index.html">theelementaryteacher</a>
+    <!-- Top Nav -->
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="#home" aria-label="Elementary Educator Home">
+          <span class="brand-emoji" aria-hidden="true">🍎</span>
+          <span class="brand-text">Elementary Educator</span>
+        </a>
 
-        <button class="menu-btn" aria-label="Toggle menu" onclick="toggleMenu()">Menu</button>
+        <nav class="navlinks" id="navLinks" aria-label="Primary">
+          <a class="pill active" href="#home">Home</a>
+          <a class="pill" href="#app">App</a>
+          <a class="pill" href="#youtube">YouTube</a>
+          <a class="pill" href="#work">Work</a>
+          <a class="pill" href="#about">About</a>
+          <a class="pill" href="#contact">Contact</a>
+        </nav>
 
-        <div class="nav-links" id="navLinks">
-          <a class="active" href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="resources.html">Resources</a>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-
-      <section class="hero">
-        <p class="kicker">Elementary education made practical</p>
-        <h1>Welcome to The Elementary Teacher</h1>
-        <p class="sub">
-          Classroom-ready ideas, routines, and resources you can use immediately.
-        </p>
-        <div class="hero-cta">
-          <a class="btn primary" href="resources.html">Browse resources</a>
-          <a class="btn" href="about.html">Meet the teacher</a>
-        </div>
-      </section>
-    </header>
-
-    <main class="container">
-      <section class="grid">
-        <article class="card">
-          <h2>Classroom Tips</h2>
-          <p>Simple strategies for behavior, routines, and community-building.</p>
-          <a class="link" href="resources.html#tips">Explore tips →</a>
-        </article>
-
-        <article class="card">
-          <h2>Printables</h2>
-          <p>Organizers, checklists, and classroom materials ready to download.</p>
-          <a class="link" href="resources.html#printables">See printables →</a>
-        </article>
-
-        <article class="card">
-          <h2>Reading & Phonics</h2>
-          <p>Foundational skills, fluency practice, and engaging literacy activities.</p>
-          <a class="link" href="resources.html#reading">Go to literacy →</a>
-        </article>
-      </section>
-
-      <section class="section">
-        <h2>Featured this week</h2>
-        <div class="featured">
-          <div>
-            <h3>Morning Routine Checklist</h3>
-            <p class="muted">
-              A consistent morning routine reduces transitions and sets a calm tone.
-              Add your own steps and print for student desks.
-            </p>
-            <a class="btn small" href="resources.html#printables">Get it</a>
-          </div>
-          <div class="note">
-            <p><strong>Quick start:</strong> Replace the text on this site with your own,
-              then publish with GitHub Pages in 2 minutes.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <div class="container footer-inner">
-        <p>© <span id="year"></span> theelementaryteacher</p>
-        <div class="footer-links">
-          <a href="contact.html">Contact</a>
-          <a href="about.html">About</a>
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="#app">Get the App</a>
+          <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
         </div>
       </div>
-    </footer>
+    </header>
+
+    <!-- Hero -->
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-left">
+            <div class="badge">
+              <span class="spark" aria-hidden="true">✨</span>
+              <span>Welcome to my teaching corner</span>
+            </div>
+
+            <h1 class="hero-title">
+              <span class="grad">Inspiring Young Minds,</span><br />
+              <span>One Lesson at a Time</span>
+            </h1>
+
+            <p class="hero-sub">
+              Discover classroom resources, teaching tips, and tools designed to help elementary
+              educators create magical learning experiences.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#app">
+                Download the App <span aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-outline" href="#youtube">
+                <span class="play" aria-hidden="true">▶</span> Watch on YouTube
+              </a>
+            </div>
+
+            <a class="work-link" href="#work">
+              <span class="work-icon" aria-hidden="true">▦</span>
+              View My Work
+            </a>
+          </div>
+
+          <div class="hero-right">
+            <div class="hero-media">
+              <!-- Replace this placeholder image with your own.
+                   Put your image in /assets and update src below. -->
+              <img
+                src="assets/classroom-illustration.png"
+                alt="Illustration of students learning in a classroom"
+                onerror="this.src='https://placehold.co/980x560/png?text=Add+assets%2Fclassroom-illustration.png';"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Feature Cards -->
+      <section class="features">
+        <div class="container feature-grid">
+          <article class="feature-card">
+            <div class="icon-wrap i-peach" aria-hidden="true">📖</div>
+            <h3>Lesson Resources</h3>
+            <p>Ready-to-use materials for your classroom</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-wrap i-blue" aria-hidden="true">▶</div>
+            <h3>Video Tutorials</h3>
+            <p>Weekly tips and teaching ideas</p>
+          </article>
+
+          <article class="feature-card">
+            <div class="icon-wrap i-mint" aria-hidden="true">👥</div>
+            <h3>Community</h3>
+            <p>Join thousands of educators</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonials" id="work">
+        <div class="container">
+          <h2 class="section-title">What Teachers Are Saying</h2>
+          <p class="section-sub">Join a community of educators who are transforming their classrooms</p>
+
+          <div class="testimonial-grid">
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="quote">
+                “Sarah's resources have completely transformed how I approach lesson planning. My
+                students are more engaged than ever!”
+              </p>
+              <div class="person">
+                <div class="avatar">J</div>
+                <div>
+                  <div class="name">Jessica T.</div>
+                  <div class="role">3rd Grade Teacher</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="quote">
+                “The Elementary Teacher App is a game-changer. It’s like having a teaching assistant
+                in my pocket!”
+              </p>
+              <div class="person">
+                <div class="avatar">M</div>
+                <div>
+                  <div class="name">Michael R.</div>
+                  <div class="role">1st Grade Teacher</div>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card">
+              <div class="stars" aria-label="5 star rating">★★★★★</div>
+              <p class="quote">
+                “I watch Sarah's videos every Sunday to prep for my week. Her tips are practical and
+                actually work!”
+              </p>
+              <div class="person">
+                <div class="avatar">A</div>
+                <div>
+                  <div class="name">Amanda K.</div>
+                  <div class="role">Kindergarten Teacher</div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Newsletter -->
+      <section class="newsletter" id="contact">
+        <div class="container">
+          <div class="newsletter-card">
+            <h2 class="newsletter-title">Stay in the Loop! <span aria-hidden="true">📬</span></h2>
+            <p class="newsletter-sub">
+              Get weekly teaching tips, free resources, and early access to new content delivered
+              straight to your inbox.
+            </p>
+
+            <form class="newsletter-form" onsubmit="newsletterSubmit(event)">
+              <input type="email" name="email" placeholder="your.email@school.edu" required />
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </form>
+
+            <p class="newsletter-fine">No spam, ever. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer" id="about">
+        <div class="container footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <span class="brand-emoji" aria-hidden="true">🍎</span>
+              <span>Elementary Educator</span>
+            </div>
+            <p class="footer-tagline">Inspiring Young Minds, One Lesson at a Time</p>
+
+            <div class="socials" aria-label="Social links">
+              <a class="social" href="#" aria-label="YouTube">▶</a>
+              <a class="social" href="#" aria-label="Instagram">◎</a>
+              <a class="social" href="#" aria-label="Twitter / X">𝕏</a>
+              <a class="social" href="mailto:hello@your-email.com" aria-label="Email">✉</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#app">The App</a>
+            <a href="#youtube">YouTube</a>
+            <a href="#work">Work</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="#about">About Me</a>
+            <a href="#contact">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <p class="footer-muted">Have questions or want to collaborate?</p>
+            <a class="email" href="mailto:hello@your-email.com">hello@your-email.com</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© <span id="year"></span> Elementary Educator</p>
+        </div>
+      </footer>
+    </main>
 
     <script src="assets/script.js"></script>
   </body>
