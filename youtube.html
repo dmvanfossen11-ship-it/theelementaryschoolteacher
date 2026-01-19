@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YouTube | Elementary Educator</title>
+    <meta name="description" content="Teaching tips, classroom ideas, and weekly videos for K–5 educators." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body>
+    <!-- Top Nav -->
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Elementary Educator Home">
+          <span class="brand-emoji" aria-hidden="true">🍎</span>
+          <span class="brand-text">Elementary Educator</span>
+        </a>
+
+        <nav class="navlinks" id="navLinks" aria-label="Primary">
+          <a class="pill" href="index.html">Home</a>
+          <a class="pill" href="app.html">App</a>
+          <a class="pill active" href="youtube.html">YouTube</a>
+          <a class="pill" href="index.html#work">Work</a>
+          <a class="pill" href="index.html#about">About</a>
+          <a class="pill" href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="app.html#download">Get the App</a>
+          <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="yt-hero">
+        <div class="container yt-hero-inner">
+          <div class="yt-badge">
+            <span class="yt-icon" aria-hidden="true">▶</span>
+            <span>Elementary Educator</span>
+          </div>
+
+          <h1 class="yt-title">Teaching Tips &amp; Classroom Ideas</h1>
+          <p class="yt-sub">
+            Weekly videos with teaching tips, classroom ideas, and educational content for K–5 educators.
+          </p>
+
+          <div class="yt-actions">
+            <!-- Replace # with your real channel link -->
+            <a class="btn btn-youtube" href="#" target="_blank" rel="noreferrer">
+              <span class="bell" aria-hidden="true">🔔</span> Subscribe on YouTube
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category pills -->
+      <section class="yt-filters">
+        <div class="container">
+          <div class="filter-row" role="tablist" aria-label="Video categories">
+            <button class="filter-pill active" type="button" data-filter="all">All Videos</button>
+            <button class="filter-pill" type="button" data-filter="Teaching Tips">Teaching Tips</button>
+            <button class="filter-pill" type="button" data-filter="Classroom Ideas">Classroom Ideas</button>
+            <button class="filter-pill" type="button" data-filter="DIY Projects">DIY Projects</button>
+            <button class="filter-pill" type="button" data-filter="Book Reviews">Book Reviews</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Video cards -->
+      <section class="yt-grid-section">
+        <div class="container">
+          <div class="yt-grid" id="videoGrid">
+            <!-- Card 1 -->
+            <article class="video-card" data-category="Book Reviews">
+              <div class="thumb">
+                <img
+                  src="assets/video1.jpg"
+                  alt="Video thumbnail"
+                  onerror="this.src='https://placehold.co/1200x675/png?text=Add+assets%2Fvideo1.jpg';"
+                />
+              </div>
+              <div class="video-body">
+                <div class="tag">Book Reviews</div>
+                <h3>My Favorite Read-Alouds for Second Grade</h3>
+                <a class="watch" href="#" target="_blank" rel="noreferrer">Watch Video ↗</a>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="video-card" data-category="Teaching Tips">
+              <div class="thumb">
+                <img
+                  src="assets/video2.jpg"
+                  alt="Video thumbnail"
+                  onerror="this.src='https://placehold.co/1200x675/png?text=Add+assets%2Fvideo2.jpg';"
+                />
+              </div>
+              <div class="video-body">
+                <div class="tag">Teaching Tips</div>
+                <h3>Engaging Math Activities That Kids Love</h3>
+                <a class="watch" href="#" target="_blank" rel="noreferrer">Watch Video ↗</a>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="video-card" data-category="Classroom Ideas">
+              <div class="thumb">
+                <img
+                  src="assets/video3.jpg"
+                  alt="Video thumbnail"
+                  onerror="this.src='https://placehold.co/1200x675/png?text=Add+assets%2Fvideo3.jpg';"
+                />
+              </div>
+              <div class="video-body">
+                <div class="tag">Classroom Ideas</div>
+                <h3>Classroom Organization Hacks</h3>
+                <a class="watch" href="#" target="_blank" rel="noreferrer">Watch Video ↗</a>
+              </div>
+            </article>
+          </div>
+
+          <div class="yt-bottom-cta">
+            <!-- Replace # with your channel/videos page -->
+            <a class="btn btn-outline" href="#" target="_blank" rel="noreferrer">
+              View All Videos on YouTube ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer (reuse) -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <span class="brand-emoji" aria-hidden="true">🍎</span>
+              <span>Elementary Educator</span>
+            </div>
+            <p class="footer-tagline">Inspiring Young Minds, One Lesson at a Time</p>
+
+            <div class="socials" aria-label="Social links">
+              <a class="social" href="#" aria-label="YouTube">▶</a>
+              <a class="social" href="#" aria-label="Instagram">◎</a>
+              <a class="social" href="#" aria-label="Twitter / X">𝕏</a>
+              <a class="social" href="mailto:hello@your-email.com" aria-label="Email">✉</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="app.html">The App</a>
+            <a href="youtube.html">YouTube</a>
+            <a href="index.html#work">Work</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="index.html#about">About Me</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <p class="footer-muted">Have questions or want to collaborate?</p>
+            <a class="email" href="mailto:hello@your-email.com">hello@your-email.com</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© <span id="year"></span> Elementary Educator</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
