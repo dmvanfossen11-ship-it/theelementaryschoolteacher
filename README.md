@@ -1,4 +1,4 @@
-# theelementaryteacher
+# theelementaryschoolteacher
 
 Starter website for The Elementary Teacher.
 
