@@ -1,0 +1,303 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App | Elementary Educator</title>
+    <meta name="description" content="The Elementary Teacher App — features, screenshots, pricing, and FAQ." />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body>
+    <!-- Top Nav (same style as home) -->
+    <header class="topbar">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Elementary Educator Home">
+          <span class="brand-emoji" aria-hidden="true">🍎</span>
+          <span class="brand-text">Elementary Educator</span>
+        </a>
+
+        <nav class="navlinks" id="navLinks" aria-label="Primary">
+          <a class="pill" href="index.html">Home</a>
+          <a class="pill active" href="app.html">App</a>
+          <a class="pill" href="index.html#youtube">YouTube</a>
+          <a class="pill" href="index.html#work">Work</a>
+          <a class="pill" href="index.html#about">About</a>
+          <a class="pill" href="index.html#contact">Contact</a>
+        </nav>
+
+        <div class="nav-cta">
+          <a class="btn btn-ghost" href="#download">Get the App</a>
+          <button class="hamburger" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- App Hero -->
+      <section class="app-hero" id="download">
+        <div class="container app-hero-grid">
+          <div class="app-hero-left">
+            <div class="chip">
+              <span class="chip-icon" aria-hidden="true">📱</span>
+              Available on iOS &amp; Android
+            </div>
+
+            <h1 class="app-title">The Elementary Teacher App</h1>
+            <p class="app-sub">
+              Everything you need to manage your classroom, track student progress, and discover
+              amazing lesson ideas — all in one beautiful app.
+            </p>
+
+            <div class="app-actions">
+              <a class="btn btn-dark" href="#" aria-label="Download for iOS">
+                <span aria-hidden="true"></span> Download for iOS
+              </a>
+              <a class="btn btn-outline" href="#" aria-label="Get it on Android">
+                <span aria-hidden="true">🤖</span> Get on Android
+              </a>
+            </div>
+
+            <p class="fine">
+              Tip: When your App Store / Google Play links are ready, paste them into these buttons.
+            </p>
+          </div>
+
+          <div class="app-hero-right">
+            <div class="app-device">
+              <!-- Replace with real app mockup image later:
+                   Put file in /assets and change src to assets/app-mockup.png -->
+              <img
+                src="assets/app-mockup.png"
+                alt="App preview"
+                onerror="this.src='https://placehold.co/980x920/png?text=Add+assets%2Fapp-mockup.png';"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Everything You Need -->
+      <section class="section-pad">
+        <div class="container">
+          <h2 class="center-title">Everything You Need</h2>
+          <p class="center-sub">Powerful features designed by teachers, for teachers</p>
+
+          <div class="feature6">
+            <article class="feature-card2">
+              <div class="icon-soft">📖</div>
+              <h3>Lesson Planning</h3>
+              <p>Create and organize lesson plans with an intuitive drag-and-drop interface.</p>
+            </article>
+
+            <article class="feature-card2">
+              <div class="icon-soft">👥</div>
+              <h3>Student Tracking</h3>
+              <p>Monitor progress, attendance, and achievements for each student.</p>
+            </article>
+
+            <article class="feature-card2">
+              <div class="icon-soft">🗓️</div>
+              <h3>Schedule Management</h3>
+              <p>Keep track of events, parent meetings, and important dates.</p>
+            </article>
+
+            <article class="feature-card2">
+              <div class="icon-soft">💡</div>
+              <h3>Activity Ideas</h3>
+              <p>Access hundreds of creative activities and resources for any subject.</p>
+            </article>
+
+            <article class="feature-card2">
+              <div class="icon-soft">💬</div>
+              <h3>Parent Communication</h3>
+              <p>Send updates and share progress reports with parents easily.</p>
+            </article>
+
+            <article class="feature-card2">
+              <div class="icon-soft">🏅</div>
+              <h3>Reward System</h3>
+              <p>Motivate students with customizable badges and achievements.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- See it in Action -->
+      <section class="section-pad">
+        <div class="container">
+          <h2 class="center-title">See It in Action</h2>
+          <p class="center-sub">A beautiful, intuitive interface designed for busy teachers</p>
+
+          <div class="shots">
+            <div class="shot">
+              <div class="shot-inner">
+                <div class="cam" aria-hidden="true">📸</div>
+                <div class="shot-label">Screenshot 1</div>
+              </div>
+            </div>
+            <div class="shot">
+              <div class="shot-inner">
+                <div class="cam" aria-hidden="true">📸</div>
+                <div class="shot-label">Screenshot 2</div>
+              </div>
+            </div>
+            <div class="shot">
+              <div class="shot-inner">
+                <div class="cam" aria-hidden="true">📸</div>
+                <div class="shot-label">Screenshot 3</div>
+              </div>
+            </div>
+            <div class="shot">
+              <div class="shot-inner">
+                <div class="cam" aria-hidden="true">📸</div>
+                <div class="shot-label">Screenshot 4</div>
+              </div>
+            </div>
+          </div>
+
+          <p class="fine center">
+            Later, replace each screenshot block with a real image in <code>/assets</code>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Pricing -->
+      <section class="section-pad">
+        <div class="container">
+          <p class="center-sub">Start free, upgrade when you're ready</p>
+
+          <div class="pricing">
+            <article class="price-card">
+              <h3>Free</h3>
+              <div class="price">$0</div>
+              <ul class="checks">
+                <li>Basic lesson planning</li>
+                <li>Up to 30 students</li>
+                <li>Activity library access</li>
+              </ul>
+              <a class="btn btn-outline wide" href="#">Get Started Free</a>
+            </article>
+
+            <article class="price-card pro">
+              <h3>Pro</h3>
+              <div class="price">$4.99<span class="per">/mo</span></div>
+              <ul class="checks">
+                <li>Unlimited students</li>
+                <li>Advanced analytics</li>
+                <li>Parent portal</li>
+                <li>Priority support</li>
+                <li>Custom rewards</li>
+              </ul>
+              <a class="btn btn-primary wide" href="#">Upgrade to Pro</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="section-pad faq">
+        <div class="container">
+          <h2 class="center-title">Frequently Asked Questions</h2>
+          <p class="center-sub">Got questions? We've got answers!</p>
+
+          <div class="accordion">
+            <button class="acc" type="button" onclick="toggleAcc(this)">
+              <span>Is the app free to use?</span>
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="panel">
+              <p>
+                Yes. The Free plan includes core features. If you want unlimited students and
+                advanced tools, upgrade to Pro.
+              </p>
+            </div>
+
+            <button class="acc" type="button" onclick="toggleAcc(this)">
+              <span>Which devices are supported?</span>
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="panel">
+              <p>
+                iOS and Android are supported. You can also view select content from a desktop browser.
+              </p>
+            </div>
+
+            <button class="acc" type="button" onclick="toggleAcc(this)">
+              <span>How do I contact support?</span>
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="panel">
+              <p>
+                Email us at <a href="mailto:hello@your-email.com">hello@your-email.com</a> and we’ll reply as soon as possible.
+              </p>
+            </div>
+
+            <button class="acc" type="button" onclick="toggleAcc(this)">
+              <span>Is my data secure?</span>
+              <span class="chev" aria-hidden="true">⌄</span>
+            </button>
+            <div class="panel">
+              <p>
+                Yes. We use industry-standard security practices. You control what you store and share.
+              </p>
+            </div>
+          </div>
+
+          <div class="need-help">
+            <h3>Need Help? <span aria-hidden="true">🤝</span></h3>
+            <p class="center-sub">Our support team is here for you. Reach out anytime!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer (reuse) -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-col">
+            <div class="footer-brand">
+              <span class="brand-emoji" aria-hidden="true">🍎</span>
+              <span>Elementary Educator</span>
+            </div>
+            <p class="footer-tagline">Inspiring Young Minds, One Lesson at a Time</p>
+
+            <div class="socials" aria-label="Social links">
+              <a class="social" href="#" aria-label="YouTube">▶</a>
+              <a class="social" href="#" aria-label="Instagram">◎</a>
+              <a class="social" href="#" aria-label="Twitter / X">𝕏</a>
+              <a class="social" href="mailto:hello@your-email.com" aria-label="Email">✉</a>
+            </div>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <a href="index.html">Home</a>
+            <a href="app.html">The App</a>
+            <a href="index.html#youtube">YouTube</a>
+            <a href="index.html#work">Work</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Resources</h4>
+            <a href="index.html#about">About Me</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Get in Touch</h4>
+            <p class="footer-muted">Have questions or want to collaborate?</p>
+            <a class="email" href="mailto:hello@your-email.com">hello@your-email.com</a>
+          </div>
+        </div>
+
+        <div class="container footer-bottom">
+          <p>© <span id="year"></span> Elementary Educator</p>
+        </div>
+      </footer>
+    </main>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
